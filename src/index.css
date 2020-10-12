@@ -117,17 +117,16 @@
 
 .subtext:hover {
   transform: rotate(-90deg) scale(1.1);
+
 }
 
 .pp-container {
   position: relative;
-  margin-top: -6%;
-  margin-left: 30%;
-  background-color: #3c6e71;
+  margin-top: -8%;
+  margin-left: 35%;
   width: 65vw;
   height: 100%;
   display: flex;
-  border: 5px solid #a31621;
 }
 
 .pp-upper {
@@ -145,7 +144,7 @@
   height: 200px;
   border: 10px solid #fff;
   border-bottom: 40px solid #fff;
-  outline: 3px solid #353535;
+  outline: 3px solid #000000;
 }
 
 .pp-text {
@@ -173,6 +172,50 @@
   padding: 20px 0px 20px 0px;
   font-family: 'Cedarville Cursive', cursive;
   text-shadow: 0px 0px #000000;
+}
+
+.skills-container {
+  height: 600px;
+  width: 600px;
+  margin-top: -12%;
+  margin-left: 2%;
+  border: 4px solid #3c6e71;
+  background-color: #838383;
+  text-align: center;
+}
+
+.skills-h3 {
+  font-size: 2.25rem;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-decoration: underline;
+}
+
+.skills-ul {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.cert {
+  margin: 1% auto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.25rem;
+}
+
+.cert-li {
+  margin: 2% 0;
+}
+
+.cert-a {
+  text-align: none;
+  color: #a31621;
+}
+
+.cert-a:hover {
+  color: #d01c2a;
+  font-style: italic;
 }
 
 body {

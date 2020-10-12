@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { motion } from "framer-motion";
-import { logoVars } from './Animations'
+import { aboutDiv } from './Animations'
 
 import logo from './assets/logo-no-bg.png';
 import logo400 from './assets/logo-no-bg-400.png';
@@ -14,7 +14,8 @@ export const About = () => {
     const { push } = useHistory();
 
     return (
-        <motion.div className='pp-container'>
+        <>
+        <motion.div className='pp-container' variants={aboutDiv} initial='init' animate='after'>
             <motion.div className='pp-upper'>
                 <motion.img className='pp' src={pp360} alt='profile picture - Zachary Peterson' />
                 <motion.div className='pp-text'>
@@ -23,5 +24,35 @@ export const About = () => {
                 </motion.div>
             </motion.div>
         </motion.div>
+
+        <motion.div className='skills-container' variants={aboutDiv} initial='init' animate='after'>
+        <motion.div className='skills-lists'>
+            <motion.h3 className='skills-h3'>Skilled At:</motion.h3>
+            <motion.ul className='skills-ul'>
+                <motion.li className='skill'>JavaScript</motion.li>
+                <motion.li className='skill'>Java</motion.li>
+                <motion.li className='skill'>React</motion.li>
+                <motion.li className='skill'>Redux</motion.li>
+                <motion.li className='skill'>HTML</motion.li>
+                <motion.li className='skill'>CSS</motion.li>
+            </motion.ul>
+        </motion.div>
+        <motion.div className='certs'>
+            <motion.h3 className='skills-h3'>Certificates:</motion.h3>
+            <motion.ul className='cert'>
+                <motion.li className='cert-li'><strong>'Front-End Web Development'</strong><br/>
+                <a className='cert-a' target='_blank' href='https://generalassemb.ly/education/front-end-web-development/'>
+                General Assembly</a>,<br/>
+                <em>Jan. 2016</em>
+                </motion.li>
+                <motion.li className='cert-li'><strong>'Full-Stack Web Development'</strong><br/>
+                <a className='cert-a' target='_blank' href='https://generalassemb.ly/education/front-end-web-development/'>
+                Lambda School</a>,<br/>
+                <em>In Progress</em>
+                </motion.li>
+            </motion.ul>
+        </motion.div>
+        </motion.div>
+        </>
     )
 }
