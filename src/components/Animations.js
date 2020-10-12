@@ -119,3 +119,33 @@ export const linkVariants = {
         }
     }
 }
+
+/* Logo Animations */
+
+export const logoVars = {
+    init: {
+        y: 2000
+    },
+    after: {
+        y: 0,
+        transition: {
+            delay: .3,
+            duration: .5
+        }
+    }
+}
+
+/* About Animations */
+
+export const aboutDiv = {
+    init: {
+        y: 2000
+    },
+    after: {
+        y: 0,
+        transition: {
+            delay: .3,
+            duration: .5
+        }
+    }
+}
