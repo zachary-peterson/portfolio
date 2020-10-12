@@ -57,9 +57,6 @@ export const Landing = () => {
             <motion.h2 className='bot' variants={subs} initial='init' animate='after'>&</motion.h2>
         </div>
 
-        <div className='boxThree'></div>
-        <div className='boxFour'></div>
-
         </motion.div>
     )
 }
