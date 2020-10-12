@@ -6,11 +6,6 @@ import { name, subs, subsDev, leterOne, leterTwo, leterThree } from './Animation
 
 export const Landing = () => {
 
-    const openInNewTab = (url) => {
-        var win = window.open(url, '_blank');
-        win.focus();
-      }
-
     return (
         <motion.div
             className='container'

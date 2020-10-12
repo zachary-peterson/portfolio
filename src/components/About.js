@@ -18,6 +18,7 @@ export const About = () => {
         <motion.div className='pp-container' variants={aboutDiv} initial='init' animate='after'>
             <motion.div className='pp-upper'>
                 <motion.img className='pp' src={pp360} alt='profile picture - Zachary Peterson' />
+                <div className="spacer"></div>
                 <motion.div className='pp-text'>
                     <motion.p><strong>HELLO</strong><br/>my name is:</motion.p>
                     <motion.h2 className='pp-h2'>Zachary Peterson</motion.h2>
