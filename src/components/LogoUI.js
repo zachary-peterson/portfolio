@@ -13,13 +13,13 @@ export const LogoUI = () => {
     const { push } = useHistory();
 
     return (
-        <>
+        <div className='UI'>
             <motion.img className='logo' src={logo400} alt='logo' onClick={() => push('/')} variants={logoVars} initial='init' animate='after'/>
 
             <Route path='/portfolio' component={Projects} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
 
-        </>
+        </div>
     )
 }

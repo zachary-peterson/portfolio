@@ -19,6 +19,7 @@ export const Landing = () => {
 
         <div className='landing-name'>
             <motion.a className='title' variants={name} initial='init' whileHover='after' target='_blank' href={'https://www.linkedin.com/in/zacharytpeterson/'}>
+                <div className='title-lets'>
                 <motion.span className='title' variants={leterOne} initial='init' animate='after'>Z</motion.span>
                 <motion.span className='title' variants={leterTwo} initial='init' animate='after'>a</motion.span>
                 <motion.span className='title' variants={leterOne} initial='init' animate='after'>c</motion.span>
@@ -26,7 +27,8 @@ export const Landing = () => {
                 <motion.span className='title' variants={leterTwo} initial='init' animate='after'>a</motion.span>
                 <motion.span className='title' variants={leterThree} initial='init' animate='after'>r</motion.span>
                 <motion.span className='title' variants={leterOne} initial='init' animate='after'>y</motion.span>
-                <span> </span><br/>
+                </div>
+                <div className='title-lets'>
                 <motion.span className='title' variants={leterOne} initial='init' animate='after'>P</motion.span>
                 <motion.span className='title' variants={leterTwo} initial='init' animate='after'>e</motion.span>
                 <motion.span className='title' variants={leterThree} initial='init' animate='after'>t</motion.span>
@@ -35,6 +37,7 @@ export const Landing = () => {
                 <motion.span className='title' variants={leterOne} initial='init' animate='after'>s</motion.span>
                 <motion.span className='title' variants={leterOne} initial='init' animate='after'>o</motion.span>
                 <motion.span className='title' variants={leterTwo} initial='init' animate='after'>n</motion.span>
+                </div>
             </motion.a>
         </div>
 
@@ -42,13 +45,13 @@ export const Landing = () => {
         
         <div className='angle'>
             <motion.h2 className='subtext' variants={subs} initial='init' animate='after' onClick={()=> window.open("https://zachary-peterson.imgbb.com/", "_blank")}>
-                &nbsp;&nbsp;Design&nbsp;
+            <div className='hidden'>&nbsp;</div>&nbsp;Design&nbsp;
             </motion.h2>
         </div>
 
         <div className='landing-bot'>
             <motion.h2 className='subtitle' variants={subsDev} initial='init' animate='after' whileHover='hover' onClick={()=> window.open("https://github.com/zachary-peterson", "_blank")}>
-                Development&nbsp;&nbsp;&nbsp;&nbsp;
+                Development<div className='hidden'>&nbsp;&nbsp;&nbsp;&nbsp;</div>
             </motion.h2>
             &nbsp;&nbsp;&nbsp;
             <motion.h2 className='bot' variants={subs} initial='init' animate='after'>&</motion.h2>

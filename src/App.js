@@ -1,8 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { NavBar, LogoUI, Projects, About, Contact, Landing } from './components/index';
-
-import './App.css';
+import { NavBar, LogoUI, Landing } from './components/index';
 
 function App() {
   return (
