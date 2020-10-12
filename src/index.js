@@ -9,6 +9,8 @@ import './index.css';
 import App from './App';
 import { rootReducer } from './store';
 
+const stylesheet = './index.css';
+
 export const store = createStore(rootReducer, applyMiddleware(thunk, logger));
 
 

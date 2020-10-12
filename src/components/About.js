@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ export const About = () => {
     const { push } = useHistory();
 
     return (
-        <>
+        <div className='about-UI'>
         <motion.div className='pp-container' variants={aboutDiv} initial='init' animate='after'>
             <motion.div className='pp-upper'>
                 <motion.img className='pp' src={pp360} alt='profile picture - Zachary Peterson' />
@@ -53,6 +53,6 @@ export const About = () => {
             </motion.ul>
         </motion.div>
         </motion.div>
-        </>
+        </div>
     )
 }
