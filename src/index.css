@@ -1,10 +1,125 @@
+.container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.landing-name {
+  height: 75vh;
+  margin-top: 3%;
+  margin-left: 5%;
+  overflow: hidden;
+}
+
+.landing-bot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bot {
+  font-size: 27rem;
+  position: absolute;
+  right: 60px;
+  bottom: -415px;
+  overflow: hidden;
+  color: #3c6e71;
+  text-shadow: 3px 15px #000000;
+  /* transform: rotate(-30deg); */
+}
+
+.title {
+  /* background-color: #c44900; */
+  line-height: 1.1;
+  margin: .7%;
+  position: relative;
+  color: #ffffff;
+  font-size: 15rem;
+  font-family: 'Fredoka One', cursive;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  text-decoration: none;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.subtitle {
+  font-family: 'Crimson Text', serif;
+  text-shadow: 3px 8px #000000;
+  color: #87bba2;
+  font-size: 15rem;
+  position: absolute;
+  left: 40px;
+  bottom: -160px;
+  overflow: hidden;
+  text-decoration: underline;
+}
+
+.angle {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  position: sticky;
+  background-color: green;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.navbtn {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  position: relative;
+  height: 50px;
+  font-size: 1.5rem;
+  margin: 0 1.5%;
+  margin-top: 15px;
+  padding: 1% 2.5%;
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+  right: -125px;
+  background-color: #a31621;
+  color: white;
+}
+
+
+
+.navbtn:hover {
+  background-color: #d01c2a;
+}
+
+.subtext {
+  color: #a31621;
+  letter-spacing: 8px;
+  display: flex;
+  line-height: 2;
+  font-family: 'Peddana', serif;
+  font-size: 12rem;
+  position: absolute;
+  top: -15px;
+  right: -90px;
+  transform: rotate(-90deg);
+  overflow: hidden;
+  border-bottom: 10px dashed #ffffff;
+  border-right: 10px dashed #ffffff;
+  text-shadow: 2px 5px #535353;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Impact, Charcoal, sans-serif;
+  background-color: #353535;
+  overflow: hidden;
 }
 
 code {
