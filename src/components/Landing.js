@@ -41,7 +41,7 @@ export const Landing = () => {
         <div className='boxOne'></div>
         
         <div className='angle'>
-            <motion.h2 className='subtext' variants={subs} initial='init' animate='after'>
+            <motion.h2 className='subtext' variants={subs} initial='init' animate='after' onClick={()=> window.open("https://zachary-peterson.imgbb.com/", "_blank")}>
                 &nbsp;&nbsp;Design&nbsp;
             </motion.h2>
         </div>

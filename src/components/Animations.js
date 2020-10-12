@@ -43,7 +43,7 @@ export const subsDev = {
         }
     },
     hover: {
-        textShadow: "3px 8px #353535",
+        textShadow: "6px 13px #000000",
         transition: {
             duration: .2
         }
