@@ -4,14 +4,16 @@ import { NavBar, LogoUI, Landing } from './components/index';
 
 function App() {
   return (
-    <>
-    <NavBar />
+    <section className='main-container'>
+
+      <NavBar />
+
       <Switch>
         <Route exact path='/' component={Landing} />
         <LogoUI />
-        {/* <Route exact path='/' component={Landing} /> */}
       </Switch>
-    </>
+
+    </section>
   );
 }
 

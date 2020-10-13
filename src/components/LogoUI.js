@@ -15,10 +15,6 @@ export const LogoUI = () => {
 
     return (
         <div className='UI'>
-        <div className='logo-holder'>
-            <motion.img className='logo' src={logo400} alt='logo' onClick={() => push('/')} 
-            variants={logoVars} initial='init' animate='after'/>
-        </div>
             <Route path='/portfolio' component={Projects} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />

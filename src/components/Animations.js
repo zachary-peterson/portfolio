@@ -4,15 +4,16 @@ import { motion } from 'framer-motion';
 
 // text-shadow: 2px 4px #000000;
 
-export const name = {
+export const neon = {
     init: {
         textShadow: "2px 4px 0px #000000",
         originY: 0
     },
     after: {
-        textShadow: "1px 2px 40px #a31621",
+        textShadow: "3px 5px 180px #d01c2a",
         transition: {
-            duration: .2
+            duration: .7,
+            yoyo: Infinity
         }
     }
 }
@@ -93,15 +94,13 @@ export const leterThree = {
 
 export const navVariants = {
     init: {
-        y: -100
+        opacity: 0
     },
     after: {
-        y: 0,
+        opacity: 1,
         transition: {
-            delay: .3,
+            delay: .5,
             duration: .7,
-            stiffness: 600,
-            type: "spring"
         }
     }
 }
@@ -116,6 +115,12 @@ export const linkVariants = {
         boxShadow: "0px 0px 8px #000000",
         transition: {
             duration: .2
+        }
+    },
+    hover: {
+        backgroundColor: '#do1c2a',
+        transition: {
+            duration: .4,
         }
     }
 }
